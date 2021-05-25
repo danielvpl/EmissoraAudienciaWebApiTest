@@ -1,5 +1,4 @@
-﻿using Domain.CustomResponse;
-using Domain.Entities;
+﻿using Domain.Entities;
 using Domain.Interfaces;
 using Domain.Validators;
 using System;
@@ -27,9 +26,9 @@ namespace Domain.Services
             _repository.Add(emissora);
         }
 
-        public bool Exists(Emissora audiencia)
+        public bool Exists(Emissora emissora)
         {
-            return _repository.Exists(audiencia);
+            return _repository.Exists(emissora);
         }
 
         public List<Emissora> Get()
@@ -47,9 +46,9 @@ namespace Domain.Services
             _repository.Remove(deleteEmissora);
         }
 
-        public void Update(Emissora audiencia)
+        public void Update(Emissora emissora)
         {
-            _repository.Update(audiencia);
+            _repository.Update(emissora);
         }
     }
 }
