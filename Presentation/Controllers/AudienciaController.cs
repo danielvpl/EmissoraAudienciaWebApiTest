@@ -27,6 +27,12 @@ namespace Presentation.Controllers
         }
 
         // GET api/<AudienciaController>/media
+        /// <summary>
+        /// AudienciaController Get: Obtém a média ou somatório da audiência por emissora
+        /// </summary>
+        /// <param name="visao">Opções de visão: 'media' ou 'somatorio'</param>
+        /// <param name="dtAudiencia"></param>
+        /// <returns></returns>
         [HttpGet("{visao}")]
         public IActionResult Get(string visao, [FromQuery]DateTime dtAudiencia)
         {

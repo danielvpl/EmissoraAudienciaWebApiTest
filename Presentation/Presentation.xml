@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Presentation</name>
+    </assembly>
+    <members>
+        <member name="M:Presentation.Controllers.AudienciaController.Get(System.String,System.DateTime)">
+            <summary>
+            AudienciaController Set: Obtém a média ou somatório da audiência por emissora.
+            </summary>
+            <param name="visao">Opções de visão: 'media' ou 'somatorio'</param>
+            <param name="dtAudiencia">Campo do tipo 'Data' para filtrar os registros de audiência</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
